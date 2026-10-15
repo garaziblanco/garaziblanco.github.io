@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garazi Blanco | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="boton-hamburguesa" id="btn-abrir-menu" aria-label="Abrir menú de navegación">
+    <span class="linea"></span>
+    <span class="linea"></span>
+    <span class="linea"></span>
+  </button>
+
+  <button class="btn-idioma" id="btn-idioma" aria-label="Cambiar idioma">EN</button>
+
+  <div class="overlay-menu" id="overlay-menu"></div>
+
+  <aside class="menu-lateral" id="menu-lateral">
+    <button class="btn-cerrar-menu" id="btn-cerrar-menu" aria-label="Cerrar menú">&times;</button>
+    <nav class="enlaces-menu">
+      <a href="index.html" data-i18n="nav-inicio">Inicio</a>
+      <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
+      <a href="curriculum.html" data-i18n="nav-cv">Currículum</a>
+      <a href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+    </nav>
+  </aside>
+
+  <section class="pantalla-inicio">
+    <div class="portada-texto">
+      <h1>Garazi Blanco</h1>
+      <p data-i18n="hero-rol">Concept Artist & Illustrator</p>
+    </div>
+  </section>
+
+  <section class="pantalla-dos">
+    <img src="img/ph/burbuja1.png" class="burbuja burbuja-1" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja2.png" class="burbuja burbuja-2" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja1.png" class="burbuja burbuja-3" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja2.png" class="burbuja burbuja-4" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja1.png" class="burbuja burbuja-5" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja2.png" class="burbuja burbuja-6" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja1.png" class="burbuja burbuja-7" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja2.png" class="burbuja burbuja-8" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja1.png" class="burbuja burbuja-9" alt="Burbuja decorativa">
+    <img src="img/ph/burbuja2.png" class="burbuja burbuja-10" alt="Burbuja decorativa">
+
+    <div class="contenedor-sobre-mi">
+      <div class="columna-texto">
+        <h2 data-i18n="sobre-mi-titulo">SOBRE MÍ</h2>
+        <p data-i18n="sobre-mi-p1">Graduada en Diseño y Desarrollo de Videojuegos con enfoque en Concept Art e Ilustración. Combino habilidades artísticas con conocimientos de 3D y programación, lo que me permite crear assets estéticos, optimizados y listos para implementar en el motor.</p>
+        <p data-i18n="sobre-mi-p2">Actualmente curso un Máster en Concept Art en U-tad y colaboro como concept artist e ilustradora en Estudio Duende, participando en el desarrollo visual de diversos proyectos.</p>
+      </div>
+
+      <div class="columna-avatar">
+        <div class="avatar-interactivo">
+          <div class="flechas-columna">
+            <button class="flecha" onclick="cambiarItem('accesorio', -1)" title="Accesorio anterior">◀</button>
+            <button class="flecha" onclick="cambiarItem('expresion', -1)" title="Expresión anterior">◀</button>
+            <button class="flecha" onclick="cambiarItem('ropa', -1)" title="Ropa anterior">◀</button>
+          </div>
+          <!-- Marco con las capas superpuestas (El sándwich) -->
+          <div class="avatar-marco">
+            <!-- 1. Pelo Trasero (Fijo) -->
+            <img id="capa-pelo-trasero" src="img/avatarBIEN/1_PeloTrasero.png" alt="Pelo trasero">
+            
+            <!-- 2. Cuerpo Base (Fijo) -->
+            <img id="capa-cuerpo" src="img/avatarBIEN/2_CuerpoBase.png" alt="Cuerpo base">
+            
+            <!-- 3. Ropa (Variable) -->
+            <img id="capa-ropa" src="img/avatarBIEN/3_Ropa/outfit1.png" alt="Ropa">
+            
+            <!-- 4. Mechones delanteros (Fijo) -->
+            <img id="capa-mechones" src="img/avatarBIEN/4_mechones.png" alt="Mechones">
+            
+            <!-- 5. COLOR de la Expresión (Variable - Parte 1) -->
+            <img id="capa-cara-color" src="img/avatarBIEN/5_CaraColor/Cara1Color.png" alt="Color Expresion">
+            
+            <!-- 6. Flequillo (Fijo) -->
+            <img id="capa-flequillo" src="img/avatarBIEN/6_Flequillo.png" alt="Flequillo">
+            
+            <!-- 7. LÍNEA de la Expresión (Variable - Parte 2) -->
+            <img id="capa-linea-cara" src="img/avatarBIEN/7_LineaCara/Cara1Linea.png" alt="Línea Expresion">
+            
+            <!-- 8. Accesorios (Variable) -->
+            <img id="capa-accesorio" src="img/avatarBIEN/8_Accesorios/Accesorio1.png" alt="Accesorio">
+          </div>
+          <div class="flechas-columna">
+            <button class="flecha" onclick="cambiarItem('accesorio', 1)" title="Accesorio siguiente">▶</button>
+            <button class="flecha" onclick="cambiarItem('expresion', 1)" title="Expresión siguiente">▶</button>
+            <button class="flecha" onclick="cambiarItem('ropa', 1)" title="Ropa siguiente">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="barra-navegacion-espacio">
+    <nav class="contenedor-botones-nav">
+      <a href="portfolio.html" class="boton-nav" data-i18n="nav-portfolio">Portfolio</a>
+      <a href="curriculum.html" class="boton-nav" data-i18n="nav-cv">Currículum</a>
+      <a href="contacto.html" class="boton-nav" data-i18n="nav-contacto">Contacto</a>
+    </nav>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

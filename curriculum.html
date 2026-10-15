@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum | Garazi Blanco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-secundaria pagina-cv">
+
+  <button class="boton-hamburguesa" id="btn-abrir-menu" aria-label="Abrir menú de navegación">
+    <span class="linea"></span>
+    <span class="linea"></span>
+    <span class="linea"></span>
+  </button>
+
+  <button class="btn-idioma" id="btn-idioma" aria-label="Cambiar idioma">EN</button>
+
+  <div class="overlay-menu" id="overlay-menu"></div>
+
+  <aside class="menu-lateral" id="menu-lateral">
+    <button class="btn-cerrar-menu" id="btn-cerrar-menu" aria-label="Cerrar menú">&times;</button>
+    <nav class="enlaces-menu">
+      <a href="index.html" data-i18n="nav-inicio">Inicio</a>
+      <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
+      <a href="curriculum.html" data-i18n="nav-cv">Currículum</a>
+      <a href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+    </nav>
+  </aside>
+
+  <h1 data-i18n="nav-cv">Currículum</h1>
+
+  <main class="contenedor-cv">
+    <aside class="cv-lateral">
+      <div class="cv-perfil">
+        <h1>Garazi Blanco</h1>
+        <h2 class="cv-subtitulo" data-i18n="cv-rol">Concept Artist & Ilustradora</h2>
+        <p class="cv-intro" data-i18n="cv-intro">Graduada en Diseño y Desarrollo de Videojuegos con enfoque en Concept Art e Ilustración. Combino habilidades artísticas con conocimientos de 3D y programación, lo que me permite crear assets estéticos, optimizados y listos para implementar en el motor.</p>
+        
+        <!-- AQUÍ ESTÁ EL CAMBIO: id="enlace-descarga-cv" -->
+        <a href="docs/CV-GaraziBlanco-ES.pdf" id="enlace-descarga-cv" target="_blank" rel="noopener noreferrer" class="btn-descargar-cv">
+          <i class="fa-solid fa-file-pdf"></i> <span data-i18n="cv-descargar">Descargar CV en PDF</span>
+        </a>
+      </div>
+
+      <div class="cv-bloque-lateral">
+        <h3 data-i18n="cv-hab-titulo">Habilidades</h3>
+        <div class="cv-categoria-skills">
+          <h4 data-i18n="cv-hab-2d">2D / Ilustración</h4>
+          <div class="tags-skills"><span>Clip Studio Paint</span><span>Photoshop</span></div>
+        </div>
+        <div class="cv-categoria-skills">
+          <h4 data-i18n="cv-hab-3d">3D / Modelado</h4>
+          <div class="tags-skills"><span>3ds Max</span><span>Blender</span><span>Substance 3D Painter</span></div>
+        </div>
+        <div class="cv-categoria-skills">
+          <h4 data-i18n="cv-hab-tech">Motores y Tech</h4>
+          <div class="tags-skills"><span>Unity</span><span>C#</span><span>Git / GitHub</span></div>
+        </div>
+      </div>
+
+      <div class="cv-bloque-lateral">
+        <h3 data-i18n="cv-idiomas-titulo">Idiomas</h3>
+        <ul class="lista-idiomas">
+          <li><strong data-i18n="cv-id-es">Español:</strong> <span data-i18n="cv-id-nativo">Nativo</span></li>
+          <li><strong data-i18n="cv-id-eu">Euskera:</strong> <span data-i18n="cv-id-nativo">Nativo</span></li>
+          <li><strong data-i18n="cv-id-en">Inglés:</strong> C1 (Cambridge B2 First)</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="cv-principal">
+      <div class="cv-seccion">
+        <h3 class="titulo-seccion-timeline"><i class="fa-solid fa-briefcase"></i> <span data-i18n="cv-exp-titulo">Experiencia y Formación</span></h3>
+        <div class="timeline timeline-unificada">
+
+          <div class="timeline-item">
+            <div class="timeline-nodo nodo-trabajo"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-contenido">
+              <span class="timeline-fecha" data-i18n="cv-fecha-presente">2026 - Presente</span>
+              <h4 class="timeline-titulo" data-i18n="cv-duende-rol">Concept Artist & Ilustradora</h4>
+              <h5 class="timeline-empresa"><a href="https://www.estudioduende.com/estudioduende/" target="_blank" rel="noopener noreferrer" class="enlace-empresa">Estudio Duende ↗</a></h5>
+              <p data-i18n="cv-duende-desc">Participación en el desarrollo visual de diversos proyectos del estudio, creación de concept art e ilustraciones.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-nodo nodo-estudio"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-contenido">
+              <span class="timeline-fecha" data-i18n="cv-fecha-presente">2026 - Presente</span>
+              <h4 class="timeline-titulo" data-i18n="cv-utad-rol">Máster en Concept Art</h4>
+              <h5 class="timeline-empresa" data-i18n="cv-utad-lugar">Centro Digital U-tad, Madrid</h5>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-nodo nodo-trabajo"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-contenido">
+              <span class="timeline-fecha" data-i18n="cv-fecha-dragon">Feb 2026 - Jun 2026</span>
+              <h4 class="timeline-titulo" data-i18n="cv-dragon-rol">Concept Artist & Illustrator (Prácticas)</h4>
+              <h5 class="timeline-empresa"><a href="https://dragonveinstudios.net" target="_blank" rel="noopener noreferrer" class="enlace-empresa">Dragon Vein Studio ↗</a></h5>
+              <p data-i18n="cv-dragon-desc">Ilustración de personajes con función promocional. Diseño y creación de cápsulas y banners para la plataforma de venta Steam.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-nodo nodo-estudio"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-contenido">
+              <span class="timeline-fecha">2022 - 2026</span>
+              <h4 class="timeline-titulo" data-i18n="cv-urjc-rol">Grado en Diseño y Desarrollo de Videojuegos</h4>
+              <h5 class="timeline-empresa" data-i18n="cv-urjc-lugar">Universidad Rey Juan Carlos, Madrid</h5>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-nodo nodo-trabajo"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-contenido">
+              <span class="timeline-fecha">2025</span>
+              <h4 class="timeline-titulo">Concept Artist & 2D Asset Creator</h4>
+              <h5 class="timeline-empresa"><a href="https://mangostudiosa.github.io/Catpuccino/" target="_blank" rel="noopener noreferrer" class="enlace-empresa" data-i18n="cv-cat-lugar">Proyecto Indie: Catpuccino (Mango Studio) ↗</a></h5>
+              <p data-i18n="cv-cat-desc">Diseño y creación del personaje principal y props bajo limitaciones técnicas estrictas. Implementación de sprites en Unity y colaboración técnica para asegurar la correcta integración.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

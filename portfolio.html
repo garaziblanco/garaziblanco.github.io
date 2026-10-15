@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Garazi Blanco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-secundaria pagina-portfolio">
+
+  <button class="boton-hamburguesa" id="btn-abrir-menu" aria-label="Abrir menú de navegación">
+    <span class="linea"></span>
+    <span class="linea"></span>
+    <span class="linea"></span>
+  </button>
+
+  <button class="btn-idioma" id="btn-idioma" aria-label="Cambiar idioma">EN</button>
+
+  <div class="overlay-menu" id="overlay-menu"></div>
+
+  <aside class="menu-lateral" id="menu-lateral">
+    <button class="btn-cerrar-menu" id="btn-cerrar-menu" aria-label="Cerrar menú">&times;</button>
+    <nav class="enlaces-menu">
+      <a href="index.html" data-i18n="nav-inicio">Inicio</a>
+      <a href="portfolio.html" data-i18n="nav-portfolio">Portfolio</a>
+      <a href="curriculum.html" data-i18n="nav-cv">Currículum</a>
+      <a href="contacto.html" data-i18n="nav-contacto">Contacto</a>
+    </nav>
+  </aside>
+
+  <main class="contenedor-portfolio">
+    <h1 data-i18n="nav-portfolio">Portfolio</h1>
+    <div class="grid-portfolio" id="grid-portfolio"></div>
+  </main>
+
+  <div class="modal-proyecto" id="modal-proyecto" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <button class="btn-cerrar-modal" id="btn-cerrar-modal" aria-label="Cerrar proyecto">&times;</button>
+    <button class="btn-nav-modal btn-modal-anterior" id="btn-modal-anterior" aria-label="Proyecto anterior">◀</button>
+    <button class="btn-nav-modal btn-modal-siguiente" id="btn-modal-siguiente" aria-label="Proyecto siguiente">▶</button>
+
+    <div class="modal-contenedor">
+      <section class="modal-galeria" id="modal-galeria"></section>
+      <aside class="modal-info">
+        <h2 id="modal-titulo">Título</h2>
+        <span class="modal-categoria" id="modal-categoria">Categoría</span>
+        <div class="modal-descripcion" id="modal-descripcion"><p>Descripción</p></div>
+        <div class="modal-enlaces" id="modal-enlaces"></div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="modal-libro" id="modal-libro" aria-hidden="true">
+    <div class="modal-libro-overlay" id="modal-libro-overlay"></div>
+    <button class="btn-cerrar-libro" id="btn-cerrar-libro" aria-label="Cerrar libro">&times;</button>
+    <button class="btn-hojear btn-hojear-izq" id="btn-libro-anterior" aria-label="Página anterior">◀</button>
+    <button class="btn-hojear btn-hojear-der" id="btn-libro-siguiente" aria-label="Página siguiente">▶</button>
+
+    <div class="libro-escenario">
+      <div class="libro-contenedor modo-portada" id="libro-contenedor">
+        <div class="pagina-lado pagina-izq" id="pagina-izq"><img id="img-izq" src="" alt="Página izquierda"></div>
+        <div class="hoja-animada" id="hoja-animada">
+          <div class="cara cara-frente"><img id="img-frente" src="" alt=""></div>
+          <div class="cara cara-dorso"><img id="img-dorso" src="" alt=""></div>
+        </div>
+        <div class="pagina-lado pagina-der" id="pagina-der"><img id="img-der" src="" alt="Página derecha"></div>
+        <div class="lomo-sombra"></div>
+      </div>
+      <div class="libro-contador" id="libro-contador">Portada</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
