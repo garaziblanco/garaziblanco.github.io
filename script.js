@@ -297,7 +297,7 @@ const proyectos = [
     id: "proyecto-6",
     titulo: { es: "Diseño de Mapa para Shooter", en: "Shooter Map Design" },
     categoria: { es: "Concept Art", en: "Concept Art" },
-    miniatura: "img/proyectos/MapaVal/MapaVal (2).jpg",
+    miniatura: "img/proyectos/MapaVal/mapaVal (2).jpg",
     descripcion: { es: "Concept de escenario basado en el universo de Valorant.", en: "Environment concept based on the Valorant universe." },
     imagenes: [
       { url: "img/proyectos/MapaVal/mapaVal (2).jpg", pie: { es: "Planteamiento visual del mapa.", en: "Visual layout of the map." } },
