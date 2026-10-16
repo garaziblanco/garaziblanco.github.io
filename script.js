@@ -300,9 +300,9 @@ const proyectos = [
     miniatura: "img/proyectos/MapaVal/MapaVal (2).jpg",
     descripcion: { es: "Concept de escenario basado en el universo de Valorant.", en: "Environment concept based on the Valorant universe." },
     imagenes: [
-      { url: "img/proyectos/MapaVal/MapaVal (2).jpg", pie: { es: "Planteamiento visual del mapa.", en: "Visual layout of the map." } },
-      { url: "img/proyectos/MapaVal/MapaVal (1).jpg", pie: { es: "Callout sheet de arquitectura y props de entorno.", en: "Architecture and environment prop callout sheet." } },
-      { url: "img/proyectos/MapaVal/MapaVal (3).jpg", pie: { es: "Foliage sheet y ambientación natural.", en: "Foliage sheet and natural ambiance." } }
+      { url: "img/proyectos/MapaVal/mapaVal (2).jpg", pie: { es: "Planteamiento visual del mapa.", en: "Visual layout of the map." } },
+      { url: "img/proyectos/MapaVal/mapaVal (1).jpg", pie: { es: "Callout sheet de arquitectura y props de entorno.", en: "Architecture and environment prop callout sheet." } },
+      { url: "img/proyectos/MapaVal/mapaVal (3).jpg", pie: { es: "Foliage sheet y ambientación natural.", en: "Foliage sheet and natural ambiance." } }
     ]
   }
 ];
